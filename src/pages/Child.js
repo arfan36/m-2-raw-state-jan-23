@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { COUNTER_CONTEXT } from '../App';
 
-const Child = ({ count, set_count }) => {
+const Child = () => {
+
+    const { count, set_count } = useContext(COUNTER_CONTEXT);
 
     return (
         <div>
