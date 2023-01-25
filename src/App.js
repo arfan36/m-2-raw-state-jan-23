@@ -1,5 +1,5 @@
 import './App.css';
-import Child from './pages/Child';
+import Parent from './pages/Parent';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           height: '100vh'
         }}
       >
-        <Child></Child>
+        <Parent></Parent>
       </div>
     </div>
   );
