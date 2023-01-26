@@ -1,6 +1,8 @@
 import { createContext, useState } from 'react';
 import './App.css';
+import Counter from './pages/Counter';
 import Parent from './pages/Parent';
+import ShortForm from './pages/ShortForm';
 
 export const COUNTER_CONTEXT = createContext();
 
@@ -13,7 +15,9 @@ function App() {
     <div className="text-center">
       <COUNTER_CONTEXT.Provider value={value}>
         <div className='grid place-items-center h-[100vh]'>
-          <Parent />
+          {/* <Parent /> */}
+          {/* <ShortForm /> */}
+          <Counter />
         </div>
       </COUNTER_CONTEXT.Provider>
     </div>
